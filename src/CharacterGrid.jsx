@@ -6,7 +6,7 @@ const CharacterGrid = (props) => {
         <div className="container-fluid md-5">
         <div className="row">
           <div className="col-10 mx-auto">
-            <div className="row gy-4">
+            <div className="row gy-1">
                 {props.item.map((itemdata) => {
                     return <Card key={itemdata.char_id} imgsrc={itemdata.img} nickname={itemdata.nickname} birthday={itemdata.birthday} status={itemdata.status} title={itemdata.name} />
                 })}
